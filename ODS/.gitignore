@@ -1,0 +1,6 @@
+# Copyright (C) 2019 Robert N. Evans
+
+# python byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
