@@ -152,5 +152,9 @@ def main( argv):
 
 if __name__ == "__main__":
     # execute only if run as a script
-    sys.exit( main(sys.argv))
+    try:
+        rc = main(sys.argv)
+    except BrokenPipeError:
+        rc = 0
+    sys.exit( rc)
 
