@@ -148,7 +148,7 @@ def main( argv):
             try:
                 Dump_Absolute_Loader_File(f).dump_tape()
             except EOFError:
-                pass
+                continue
 
 if __name__ == "__main__":
     # execute only if run as a script
